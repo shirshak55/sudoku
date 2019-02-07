@@ -51,7 +51,10 @@
             "output": "release"
         },
         "win": {
-            "target": "portable"
+            "target": "portable",
+            "publish": [
+                "github"
+            ]
         }
     }
 }
