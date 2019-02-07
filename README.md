@@ -5,10 +5,17 @@
 
 ## Introduction
 
-This is AI based solution for sudoku problem . It is Desktop app and it can run on major platform like linux, windows and macos.
+This is AI based solution for sudoku problem . It is Desktop app and it can run on major platform like linux, windows and macos. It uses backtracking approach.
 
 ## Technology Used
 
--   Latest Version of Node JS v11.9.x at time of coding
--   Latest Version of React JS v16.8.x
--   Latest Version of Electron v4.x
+-   Node JS v11.9.x at time of coding
+-   React JS v16.8.x
+-   Electron v4.x
+-   and other helpful packages
+
+## Helpful Links
+
+-   Research paper @ http://www.csc.kth.se/utbildning/kth/kurser/DD143X/dkand12/Group6Alexander/final/Patrik_Berggren_David_Nilsson.report.pdf
+
+If u like my work feel free to donate me by contacting `shirshak55@gmail.com`
