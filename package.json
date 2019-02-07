@@ -1,7 +1,7 @@
 {
     "name": "sudoku",
     "author": "Shirshak Bajgain",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Solve the Sudoku Using Javascript",
     "main": "src/main.js",
     "repository": "git@github.com:shirshak55/sudoku.git",
