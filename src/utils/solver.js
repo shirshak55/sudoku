@@ -8,7 +8,6 @@ export function solve(board) {
         try {
             nodesProcessed = 0
             if (solveHelper(0, 0, board)) {
-                console.log('Total Nodes Processed:::', nodesProcessed)
                 return validateBoard(board)
             }
         } catch (error) {

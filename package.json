@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Solve the Sudoku Using Javascript",
     "main": "src/main.js",
-    "repository": "git@github.com:shirshak/sudoku.git",
+    "repository": "git@github.com:shirshak55/sudoku.git",
     "scripts": {
         "build": "webpack -p",
         "package-win": "electron-builder build --win --x64 --publish=always",
