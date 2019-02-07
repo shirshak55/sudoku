@@ -1,10 +1,10 @@
-import seedRandom from 'seedrandom';
+import seedRandom from 'seedrandom'
 
-import generateSudokuBoard from '../components/sudoku-board/utils/board-generator';
+import generateSudokuBoard from '../src/utils/board-generator'
 
 describe('Sudoku Board Generator', () => {
     it('should generate a valid sudoku board with a unique solution - test 1', () => {
-        seedRandom('test1', { global: true });
+        seedRandom('test1', { global: true })
         const expectedBoard = [
             [4, 1, 2, 0, 0, 0, 8, 9, 3],
             [0, 6, 0, 4, 0, 0, 0, 0, 0],
@@ -14,14 +14,14 @@ describe('Sudoku Board Generator', () => {
             [2, 0, 0, 0, 0, 0, 0, 8, 0],
             [0, 0, 0, 0, 7, 5, 0, 0, 0],
             [9, 2, 0, 3, 0, 0, 0, 0, 0],
-            [0, 5, 0, 0, 0, 0, 0, 0, 0]
-        ];
-        const board = generateSudokuBoard();
-        expect(board).toEqual(expectedBoard);
-    });
+            [0, 5, 0, 0, 0, 0, 0, 0, 0],
+        ]
+        const board = generateSudokuBoard()
+        expect(board).toEqual(expectedBoard)
+    })
 
     it('should generate a valid sudoku board with a unique solution - test 2', () => {
-        seedRandom('test2', { global: true });
+        seedRandom('test2', { global: true })
         const expectedBoard = [
             [0, 0, 0, 0, 0, 0, 0, 0, 0],
             [0, 2, 8, 0, 9, 5, 3, 0, 0],
@@ -31,9 +31,9 @@ describe('Sudoku Board Generator', () => {
             [8, 0, 9, 0, 0, 4, 0, 5, 3],
             [3, 0, 2, 0, 0, 1, 0, 0, 0],
             [0, 0, 0, 0, 0, 2, 4, 0, 0],
-            [4, 0, 1, 5, 0, 3, 9, 0, 0]
-        ];
-        const board = generateSudokuBoard();
-        expect(board).toEqual(expectedBoard);
-    });
-});
+            [4, 0, 1, 5, 0, 3, 9, 0, 0],
+        ]
+        const board = generateSudokuBoard()
+        expect(board).toEqual(expectedBoard)
+    })
+})
