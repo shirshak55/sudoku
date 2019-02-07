@@ -7,7 +7,7 @@
     "repository": "git@github.com:shirshak/sudoku.git",
     "scripts": {
         "build": "webpack -p",
-        "package-win": "electron-builder build --win --x64",
+        "package-win": "electron-builder build --win --x64 --publish=always",
         "start-main-dev": "electron ./src/main.js",
         "test": "jest --coverage && cat ./coverage/lcov.info | coveralls"
     },
