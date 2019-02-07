@@ -9,7 +9,7 @@
         "build": "webpack -p",
         "package-win": "electron-builder build --win --x64 --publish=always",
         "start-main-dev": "electron ./src/main.js",
-        "test": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+        "test": "jest --coverage"
     },
     "dependencies": {
         "@babel/core": "^7.2.2",
@@ -29,7 +29,6 @@
     },
     "devDependencies": {
         "chai": "^4.2.0",
-        "coveralls": "^3.0.2",
         "electron": "^4.0.4",
         "electron-builder": "^20.38.5",
         "jest": "^24.1.0",
