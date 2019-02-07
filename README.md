@@ -2,6 +2,7 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Build status](https://ci.appveyor.com/api/projects/status/61n53oj28kp5clj1/branch/master?svg=true)](https://ci.appveyor.com/project/shirshak55/sudoku/branch/master)
+[![Build Status](https://travis-ci.com/shirshak55/sudoku.svg?branch=master)](https://travis-ci.com/shirshak55/sudoku)
 
 ## Introduction
 
