@@ -1,0 +1,57 @@
+{
+    "name": "sudoku",
+    "author": "Shirshak Bajgain",
+    "version": "1.0.0",
+    "description": "Solve the Sudoku Using Javascript",
+    "main": "src/main.js",
+    "repository": "git@github.com:shirshak/sudoku.git",
+    "scripts": {
+        "build": "webpack -p",
+        "package-win": "electron-builder build --win --x64",
+        "start-main-dev": "electron ./src/main.js",
+        "test": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    },
+    "dependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/plugin-proposal-class-properties": "^7.3.0",
+        "@babel/preset-env": "^7.3.1",
+        "@babel/preset-react": "^7.0.0",
+        "@types/react": "^16.8.2",
+        "@types/react-dom": "^16.8.0",
+        "babel-loader": "^8.0.5",
+        "lodash": "4.17.4",
+        "react": "^16.8.1",
+        "react-dom": "^16.8.1",
+        "react-redux": "^6.0.0",
+        "redux": "^4.0.1",
+        "redux-thunk": "^2.3.0",
+        "webpack": "3.8.1"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "coveralls": "^3.0.2",
+        "electron": "^4.0.4",
+        "electron-builder": "^20.38.5",
+        "jest": "^24.1.0",
+        "mocha": "^5.2.0",
+        "seedrandom": "^2.4.4"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ],
+        "plugins": [
+            "@babel/plugin-proposal-class-properties"
+        ]
+    },
+    "build": {
+        "appId": "sudoku",
+        "directories": {
+            "output": "release"
+        },
+        "win": {
+            "target": "portable"
+        }
+    }
+}
